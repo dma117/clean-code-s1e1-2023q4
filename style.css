@@ -149,3 +149,7 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display: none;
 }
+
+.heading-1_hidden {
+  display: none;
+}
