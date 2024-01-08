@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <h1 class="heading-1 heading-1_hidden">Todo App</h1>
     <aside class="eisenhower-matrix eisenhower-matrix_centered">
       <img class="eisenhower-matrix__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix. It helps to make decisions on which tasks are urgent and important.">
@@ -15,7 +15,7 @@
       <section class="option todo-app__option">
         <h2 class="option__title">Add Item</h2>
         <div class="task option__task">
-          <input class="task__text task__text_edit" type="text">
+          <input class="task__text task__text_edit" type="text" value="">
           <button class="button task__button">Add</button>
         </div>
       </section>
@@ -24,8 +24,7 @@
         <ul class="tasks-list option__tasks-list">
           <li class="task tasks-list__task">
             <input class="task__checkbox" type="checkbox">
-            <label class="task__label">Pay Bills</label>
-            <input class="task__text" type="text">
+            <input class="task__text" type="text" value="Pay Bills" disabled>
             <button class="button task__button">Edit</button>
             <button class="button task__button">
               <img class="button__img" src="./remove.svg" alt="Delete the task">
@@ -33,7 +32,6 @@
           </li>
           <li class="task tasks-list__task tasks-list__task_edit">
             <input class="task__checkbox" type="checkbox">
-            <label class="task__label">Go Shopping</label>
             <input class="task__text task__text_edit" type="text" value="Go Shopping">
             <button class="button task__button">Save</button>
             <button class="button task__button">
@@ -47,8 +45,7 @@
         <ul class="tasks-list option__tasks-list">
           <li class="task tasks-list__task">
             <input class="task__checkbox" type="checkbox" checked>
-            <label class="task__label">See the Doctor</label>
-            <input class="task__text task__text_crossed" type="text">
+            <input class="task__text task__text_crossed" type="text" value="See the Doctor" disabled>
             <button class="button task__button">Edit</button>
             <button class="button task__button">
               <img class="button__img" src="./remove.svg" alt="Delete the task">

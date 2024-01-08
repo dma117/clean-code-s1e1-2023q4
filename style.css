@@ -1,4 +1,9 @@
 /* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
 .eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
@@ -22,12 +27,11 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
+.todo-app_centered {
+  margin: 0 auto 0;
+  display: block;
 }
-.task-row-wrapper {
+.task {
   display: flex;
 }
 ul {
@@ -65,22 +69,34 @@ button{
   text-transform: uppercase;
 }
 .task__text {
+  box-sizing: border-box;
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #ddd;
-  background: #fff;
+  padding-left: 10px;
   border-radius: 6px;
+  border-style: none;
   font-family: Lato, sans-serif;
-  color: #888;
+  color: #333;
+  background: transparent;
 }
 .task__text:focus {
   color: #333;
 }
 
 /* New Task */
+.option__task {
+  display: flex;
+}
+.option__add-task-form {
+  margin-top: 20px;
+}
+.add-task-form__input {
+  width: 100%;
+}
 
 /* Task list */
 .task {
@@ -97,9 +113,6 @@ button{
   margin: 0 10px;
 }
 
-.task__text {
-  width: 226px;
-}
 .button__img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -110,8 +123,19 @@ button{
 }
 
 /* Completed */
+.task__text_crossed {
+  text-decoration: line-through;
+  color: #888;
+}
 
 /* Edit Task */
+.task__text_edit {
+  display: inline-block;
+  width: 224px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #888;
+}
 
 .heading-1_hidden {
   display: none;
